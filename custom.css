@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+.fundo {
+    display: block;
+    height: 100vh;
+    padding: 3em;
+    text-align: center;
+    background: url(img-fundo-1.jpg);
+    background-size: cover;
+
+}
+
+.titulo{
+    padding-top: 12em;
+}
