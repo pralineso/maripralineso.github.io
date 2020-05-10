@@ -6,39 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Praline Solutions</title>
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="custom.css" />
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/custom.js"></script>
+
 
 </head>
 
 
 
+
 <body>
-    <nav class="blue-grey darken-4" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">
-                Mariana Xavier
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+  <nav class="blue-grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="sobre.html" class="brand-logo">
+        <i>MX</i>
+      </a>
 
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down ">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/fundomenu.jpg">
         </div>
-    </nav>
+        <a href="sobre.html"><img class="circle" src="images/me2.png"></a>
+        <a href="index.html"><span class="teal-text text-accent-4 name">Mariana Xavier</span></a>
+      </div>
+    </li>
 
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+
+  <!-- Fim nav-->
 
 
     <div class="row ">
@@ -52,12 +79,12 @@
         <div class="col s12 m7">
             <div class="card horizontal"
                 style="padding-top: 1em; padding-left: 2em; padding-right: 1em; padding-bottom: 1em;">
-                <div class="card-image">
-                    <img src="Pit-Stop-3.png" style="width: 130px; height: 130px;">
+                <div class="card-image hide-on-med-and-down">
+                    <img src="images/Pit-Stop-3.png" style="width: 130px; height: 130px;">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h5>PitStop</h5>
+                        <h5><a href="https://github.com/EvandroJR99/PitStop" style="color: black;">PitStop</a></h5>
                         <p>O projeto PitStop foi um aplicativo desenvolvido durante a faculdade na disciplina de
                             Engenharia de Software em 2018. Esse aplicativo tem como
                             objetivo auxiliar as pessoas a gerenciar o seus automóveis. Esse trabalho foi em grupo e
@@ -72,15 +99,15 @@
         <div class="col s12 m7">
             <div class="card horizontal"
                 style="padding-top: 1em; padding-left: 2em; padding-right: 1em; padding-bottom: 1em;">
-                <div class="card-image">
-                    <img src="logolasfac5.png" style="width: 130px; height: 130px;">
+                <div class="card-image hide-on-med-and-down">
+                    <img  src="images/logolasfac5.png" style="width: 130px; height: 130px;">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h5>SCAS</h5>
+                        <h5 ><a href="https://github.com/marianaxa/ProjetoEstagio" style="color: black;">SCAS</a></h5>
                         <p>O projeto SCAS (Sistema de Controle de Análise de Sementes) foi um sistema web
                             desenvolvido durante a faculdade no estágio supervisionado para o LASFAC (Laboratório de
-                            Análise de Sementes do Acre) em 2019, para o controle do
+                            Análise de Sementes do Acre) em 2018, para o controle do
                             processo de análise de sementes do laboratório. Esse trabalho foi em dupla e contou com
                             a participação de Evandro Cavalcante.</p>
                     </div>
@@ -91,12 +118,12 @@
         <div class="col s12 m7">
             <div class="card horizontal"
                 style="padding-top: 1em; padding-left: 2em; padding-right: 1em; padding-bottom: 1em;">
-                <div class="card-image">
-                    <img src="logolembretinhos2.png" style="width: 130px; height: 130px;">
+                <div class="card-image hide-on-med-and-down">
+                    <img src="images/logolembretinhos2.png" style="width: 130px; height: 130px;">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h5>Lembretinhos</h5>
+                        <h5><a href="https://github.com/pralineso/projeto_lembretinhos" style="color: black;">Lembretinhos</a></h5>
                         <p>O projeto Lembretinhos é um aplicativo para lembrar aos seus usuários de seus eventos. O
                             aplicativo Lembretinhos foi idealizado a muito tempo
                             e somente em janeiro de 2020 "saiu do papel", o Lembretinhos ainda esta em fase de
@@ -109,12 +136,12 @@
         <div class="col s12 m7">
             <div class="card horizontal"
                 style="padding-top: 1em; padding-left: 2em; padding-right: 1em; padding-bottom: 1em;">
-                <div class="card-image">
-                    <img src="cat2.jpg" style="width: 130px; height: 150px;">
+                <div class="card-image hide-on-med-and-down">
+                    <img src="images/cat2.jpg" style="width: 130px; height: 150px;">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h5>App-gatinhos</h5>
+                        <h5><a href="https://github.com/pralineso/projeto_lembretinhos" style="color: black;">App-gatinhos</a></h5>
                         <p>O projeto App-gatinhos é uma aplicação que foi desenvolvida durante o curso de
                             DataScience (que estou fazendo atualmente).
                             Esssa aplicação faz uma breve análise dos dados das raças de alguns gatos.</p>

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+.fundo {
+    display: block;
+    height: 100vh;
+    padding-top: 3em;
+    padding-bottom: 0%;
+    text-align: center;
+    background: url(../images/img-fundo-1.jpg);
+    background-size: cover;
+
+}
+
+.titulo{
+    padding-top: 12em;
+}
+
+iframe{
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+/*
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+  Imagem de <a href="https://pixabay.com/pt/users/ZahariMinchev-1547933/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4969649">Захари Минчев</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4969649">Pixabay</a>
+     **/
+     
+     
