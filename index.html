@@ -2,100 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Mariana Pralineso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link rel="stylesheet" href="css/custom.css" />
+    <link rel="sortcut icon" href="images/saturno.ico" type="image/x-icon" />;
+    <!-- Ícone feito por <a href="http://www.freepik.com/" title="Freepik">Freepik</a> 
+        from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
 
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="js/custom.js"></script>
-
-
+    <title>Pralineso</title>
 </head>
 
-
-
-
 <body>
-  <nav class="blue-grey darken-4" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="sobre.html" class="brand-logo">
-        <i>MX</i>
-      </a>
-
-      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-        <i class="material-icons">menu</i>
-      </a>
-
-      <ul class="right hide-on-med-and-down ">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-
-
-  <ul class="sidenav" id="mobile-nav">
-    <li>
-      <div class="user-view">
-        <div class="background">
-          <img src="images/fundomenu.jpg">
-        </div>
-        <a href="sobre.html"><img class="circle" src="images/me2.png"></a>
-        <a href="index.html"><span class="teal-text text-accent-4 name">Mariana Xavier</span></a>
-      </div>
-    </li>
-
-    <li>
-      <div class="divider"></div>
-    </li>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="projetos.html">Projetos</a></li>
-    <li><a href="contato.html">Contato</a></li>
-  </ul>
-
-  <!-- Fim nav-->
-
-
-    <div class="row">
-      <div class="section fundo titulo">
-        <div class="row ">
-          <div class="col offset-l4 ">
-            <div style="padding-top: 10em; padding-left: 1em;">
-              <h1 class="heading center white-text " style="background-color: black; ">Mariana Xavier</h1>
-              <h5 class="header col s12 white-text light" style="background-color: black;"><i>"Viver bem é ser
-                  feliz!"</i></h5>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div class="container" style="padding-top: 10%;">
+        <div class="row justify-content-md-center">
+            <div class="col col col-lg-6">
+                <h2 class="text-center display-4">Mariana Xavier</h2>
+                <!-- <p class="text-center" >Junior Developer and Data Scientist Student.</p> -->
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a href="https://github.com/pralineso" class="text-muted"><i class="fab fa-github-alt"></i><span>
+                                GitHub</span></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/mariaxa/" class="text-muted"><i class="fab fa-linkedin-in"></i><span>
+                                LinkedIn</span></a></li>
+                    <li class="list-inline-item"><a href="https://t.me/marianaps" class="text-muted"><i
+                                class="fab fa-telegram-plane"></i><span>
+                                Telegram</span></a></li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
+        <hr />
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col col col-lg-8">
+                <p class="lead"><strong>Sobre</strong></p>
+                <p class="text-justify">
+                    Olá, eu me chamo <b>Mariana</b>, sou Desenvolvedora Júnior
+                    nos horários livres e Aspirante a Cientista de dados nos horários vagos <i
+                        class="far fa-smile-wink"></i>.
+                    Moro em Santos - SP... <i class="fas fa-heart"></i> o mar <i class="left"><img src="images/wave.png"style="width: 20px; height: 18px;"></i>, viajar <i class="fas fa-suitcase-rolling"></i> e ficar na rede <i class="left"><img src="images/hammock.png"style="width: 20px; height: 18px;"></i>. Tambem gosto de desenvolver
+                    aplicativos e estou sempre tendo ideias de alguma aplicação para desenvolver, mas vivo em um dilema
+                    contra o tempo.
+                </p>
+                <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+                <!-- Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                <p class="text-justify">
+                    Tenho uma empresa fictícia, conhecida como <i><b>Praline Solutions</b></i>. Inventei essa empresa
+                    para me inspirar
+                    a desenvolver
+                    os aplicativos que não saem do papel. Por isso agora eu tenho utilizado o apelido <b>pralineso</b>.
+                </p>
+                <p class="text-justify">
+                    Meu maior sonho no momento ... é conquistar minha independência financeira.
+                    Decidi montar esse portifólio para me apresentar e mostrar os projetos que ja fiz parte ou
+                    desenvolvi nos ultimos anos.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col col col-lg-8">
+                <p class="lead mb-4"><strong>Projetos</strong></p>
+
+                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                    <div class="col-md-auto">
+                        <img src="images/cat2.jpg" style="width: 130px; height: 130px;">
+                    </div>
+                    <div class="col md-8">
+                        <h5>Gatinhos</h5>
+                        <p class="text-justify">O projeto App-gatinhos é uma aplicação que foi desenvolvida durante o
+                            curso de
+                            DataScience (que estou fazendo atualmente).
+                            Esssa aplicação faz uma breve análise dos dados das raças de alguns gatos.
+                        </p>
+                        <blockquote class="blockquote text-right">
+                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/app_gatinhos" class="text-muted"> Link do projeto</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                    <div class="col-md-auto">
+                        <img src="images/logolembretinhos2.png" 
+                        style="width: 130px; height: 130px;">
+                    </div>
+                    <div class="col md-8">
+                        <h5>Lembretinhos</h5>
+                        <p class="text-justify">O projeto Lembretinhos é um aplicativo para lembrar aos seus usuários de
+                            seus eventos. O
+                            aplicativo Lembretinhos foi idealizado a muito tempo
+                            e somente em janeiro de 2020 "saiu do papel", o Lembretinhos ainda esta em fase de
+                            desenvolvimento.</p>
+                        <blockquote class="blockquote text-right">
+                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/projeto_lembretinhos" class="text-muted"> Link do projeto</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                    <div class="col-md-auto">
+                        <img src="images/logolasfac5.png"
+                        style="width: 130px; height: 130px;">
+                    </div>
+                    <div class="col md-8">
+                        <h5>SCAS</h5>
+                        <p class="text-justify">O projeto SCAS (Sistema de Controle de Análise de Sementes) foi um
+                            sistema web
+                            desenvolvido durante a faculdade no estágio supervisionado para o LASFAC (Laboratório de
+                            Análise de Sementes do Acre) em 2018, para o controle do
+                            processo de análise de sementes do laboratório. Esse trabalho foi em dupla e contou com
+                            a participação de Evandro Cavalcante.</p>
+                        <blockquote class="blockquote text-right">
+                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/marianaxa/ProjetoEstagio" class="text-muted"> Link do projeto</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                    <div class="col-md-auto">
+                        <img src="images/Pit-Stop-3.png" 
+                            style="width: 130px; height: 130px;">
+                    </div>
+                    <div class="col md-8">
+                        <h5>Pit Stop</h5>
+
+
+                        <p class="text-justify">O projeto PitStop foi um aplicativo desenvolvido durante a faculdade na
+                            disciplina de
+                            Engenharia de Software em 2017. Esse aplicativo tem como
+                            objetivo auxiliar as pessoas a gerenciar o seus automóveis. Esse trabalho foi em grupo e
+                            contou com a participação de Amélia Alice Cardoso, Evandro Cavalcante e Michele Ascoli.</p>
+                        <blockquote class="blockquote text-right">
+                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/EvandroJR99/PitStop" class="text-muted"> Link do projeto</a></cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
- 
-
-  <footer class="page-footer blue-grey darken-4" >
-    <div class="footer-copyright">
-      <div class="container">
-        Made by <a class="teal-text text-accent-4" href="https://github.com/pralineso">pralineso</a>
-      </div>
-    </div>
-  </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
 
 </body>
