@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="sortcut icon" href="images/saturno.ico" type="image/x-icon" />;
     <!-- Ícone feito por <a href="http://www.freepik.com/" title="Freepik">Freepik</a> 
         from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <script response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict"); ></script>
    <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script> --> 
-    
+
+    <script>
+        $(document).ready(function(){ 
+            $("#myTab li:eq(0) a").tab('show'); // show 2nd tab on page load
+        });
+    </script>
     <title>Pralineso</title>
 </head>
 
 <body>
+
+
     <div class="container" style="padding-top: 10%;">
         <div class="row justify-content-md-center">
             <div class="col col col-lg-6">
@@ -43,135 +56,111 @@
         <div class="row justify-content-md-center">
             <div class="col col col-lg-8">
                 <p class="lead"><strong>Sobre</strong></p>
+                <p>Seja muito Bem Vind@ a minha pagina de apresentação <i class="far fa-grin-beam"></i>.</p>
                 <p class="text-justify">
-                    Olá, eu me chamo <b>Mariana</b>, sou Desenvolvedora
-                    e estudo para ser Cientista de Dados <i
+
+                    Eu me chamo <b>Mariana</b>, sou Analista de Sistemas e atualmente estou estudando para atuar futuramente como Cientista de Dados <i
                         class="far fa-smile-wink"></i>.
                     
-                    Tenho muito interesse em desenvolvimento mobile com Flutter e aplicações de Data Science com Python.
-                    Atualmente estou fazendo o curso da <a href="https://www.flai.com.br/" > FLAI </a>. 
+                   
                 </p>
+                <p class="text-justify"> Tenho muito interesse em  aplicações de Data Science e desenvolvimento mobile com Flutter. </p>
                 <p>   
-                    Seja muito Bem Vind@ a minha pagina de apresentação <i class="far fa-grin-beam"></i> ... A seguir você pode ver alguns projetos que fiz parte ou desenvolvi nos últimos anos.
+                 A seguir você pode ver alguns projetos  desenvolvidos por mim.
                 </p>                
             </div>
         </div>
         <br>
+
         <div class="row justify-content-md-center">
             <div class="col col col-lg-8">
                 <p class="lead mb-4"><strong>Projetos</strong></p>
 
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/pet-icon-25.jpg" style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>Análise EVet</h5>
-                        <p class="text-justify">A Análise EVet se trata de uma breve análise dos atendimentos de um Estágio de 1 mês em Med. Veterinária utilizando o Microsoft Power BI. 
-                        </p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4OGQ3OGItODdlYS00ZjNiLTk2ZDAtYzk3ODlhMzdjYTU5IiwidCI6IjkxY2NiMjVhLTc0MDAtNDlmNC1hM2ViLTU5Mjg1YTFmMzFjMSJ9&pageName=ReportSection5a56e1ead26acb0b00e1" class="text-muted"> Link da aplicação</a></cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="datascience-tab" data-toggle="tab" href="#datascience" role="tab" aria-controls="datascience" aria-selected="true">Data Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="flutter-tab" data-toggle="tab" href="#flutter" role="tab" aria-controls="flutter" aria-selected="false">Flutter</a>
+                    </li>
+                </ul>
 
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/logotipo.png" style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>Sem gluten sem lactose</h5>
-                        <p class="text-justify">O projeto sem-gluten-sem-lactose (rsrs... sem comentários sobre o nome) é um site para uma loja de biscoitos. 
-                        É a aplicação que estou desenvolvendo no momento junto com Guilherme Ceccon, para aprender e praticar novas tecnologias.
-                        </p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://sem-gluten-sem-lactose.herokuapp.com/#/home" class="text-muted"> Link da aplicação</a></cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/cat2.jpg" style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>Gatinhos</h5>
-                        <p class="text-justify">O projeto App-gatinhos é uma aplicação que foi desenvolvida durante o
-                            curso de DataScience.
-                            Esssa aplicação faz uma breve análise dos dados das raças de alguns gatos.
-                        </p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/app_gatinhos" class="text-muted"> Link do projeto</a></cite>
-                            </footer>
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://app-gatinhos.herokuapp.com/" class="text-muted"> Link da aplicação</a></cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/logolembretinhos2.png" 
-                        style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>Lembretinhos</h5>
-                        <p class="text-justify">O projeto Lembretinhos é um aplicativo para lembrar aos seus usuários de
-                            seus eventos. O
-                            aplicativo Lembretinhos foi idealizado há muito tempo
-                            e somente em janeiro de 2020 "saiu do papel", o Lembretinhos ainda esta em fase de
-                            desenvolvimento.</p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/projeto_lembretinhos" class="text-muted"> Link do projeto</a></cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/logolasfac5.png"
-                        style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>SCAS</h5>
-                        <p class="text-justify">O projeto SCAS (Sistema de Controle de Análise de Sementes) foi um
-                            sistema web
-                            desenvolvido durante a faculdade no estágio supervisionado para o LASFAC (Laboratório de
-                            Análise de Sementes do Acre) em 2018, para o controle do
-                            processo de análise de sementes do laboratório. Esse trabalho foi em dupla e contou com
-                            a participação de Evandro Cavalcante.</p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/marianaxa/ProjetoEstagio" class="text-muted"> Link do projeto</a></cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
-                    <div class="col-md-auto">
-                        <img src="images/Pit-Stop-3.png" 
-                            style="width: 130px; height: 130px;">
-                    </div>
-                    <div class="col md-8">
-                        <h5>Pit Stop</h5>
+                
+                <div class="tab-content" id="myTabContent">
+                    
+                    <!-- AbaData Science -->
+                    <div class="tab-pane fade show" id="datascience" role="tabpanel" aria-labelledby="datascience-tab">
+                        <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                            <div class="col-md-auto">
+                                <img src="images/pet-icon-25.jpg" style="width: 130px; height: 130px;">
+                            </div>
+                            <div class="col md-8">
+                                <h5>Análise EMD</h5>
+                                <p class="text-justify">A Análise EMD se trata de uma breve análise dos atendimentos de um Estágio de 1 mês em Med. Veterinária utilizando o Microsoft Power BI. 
+                                </p>
+                                <blockquote class="blockquote text-right">
+                                    <footer class="blockquote-footer"> 
+                                        <cite title="Source Title">
+                                            <a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4OGQ3OGItODdlYS00ZjNiLTk2ZDAtYzk3ODlhMzdjYTU5IiwidCI6IjkxY2NiMjVhLTc0MDAtNDlmNC1hM2ViLTU5Mjg1YTFmMzFjMSJ9&pageName=ReportSectionbb7669300520a71e49e5"
+                                            class="text"> Link da aplicação</a>
+                                        </cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
 
 
-                        <p class="text-justify">O projeto PitStop foi um aplicativo desenvolvido durante a faculdade na
-                            disciplina de
-                            Engenharia de Software em 2017. Esse aplicativo tem como
-                            objetivo auxiliar as pessoas a gerenciar os seus automóveis. Esse trabalho foi em grupo e
-                            contou com a participação de Amélia Alice Cardoso, Evandro Cavalcante e Michele Ascoli.</p>
-                        <blockquote class="blockquote text-right">
-                            <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/EvandroJR99/PitStop" class="text-muted"> Link do projeto</a></cite>
-                            </footer>
-                        </blockquote>
+                        <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                            <div class="col-md-auto">
+                                <img src="images/cat2.jpg" style="width: 130px; height: 130px;">
+                            </div>
+                            <div class="col md-8">
+                                <h5>Gatinhos</h5>
+                                <p class="text-justify">O projeto App-gatinhos é uma aplicação que foi desenvolvida em Python (Streamlit) com os dados da base <a href="https://thecatapi.com/" class="text">TheCatAPI</a>.
+                                    Esssa aplicação faz uma breve análise dos dados das raças de alguns gatos.
+                                </p>
+                                <blockquote class="blockquote text-right">
+                                    <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/app_gatinhos" class="text">GitHub</a></cite>
+                                    </footer>
+                                    <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://app-gatinhos.herokuapp.com/" class="text"> Link da aplicação</a></cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                
+                
+
+
+                    <!-- #Aba Futter -->
+                    <div class="tab-pane fade" id="flutter" role="tabpanel" aria-labelledby="flutter-tab">
+                    
+                        <div class="row pt-4 pl-4 m-2 mb-4  border rounded">
+                            <div class="col-md-auto">
+                                <img src="images/logolembretinhos2.png" 
+                                style="width: 130px; height: 130px;">
+                            </div>
+                            <div class="col md-8">
+                                <h5>Lembretinhos</h5>
+                                <p class="text-justify">O projeto Lembretinhos é um aplicativo para lembrar aos seus usuários de
+                                    seus eventos. O
+                                    aplicativo Lembretinhos foi idealizado há muito tempo
+                                    e somente em janeiro de 2020 "saiu do papel", o Lembretinhos ainda está com seu
+                                    desenvolvimento paralisado.</p>
+                                <blockquote class="blockquote text-right">
+                                    <footer class="blockquote-footer"> <cite title="Source Title"><a href="https://github.com/pralineso/projeto_lembretinhos" class="text">GitHub</a></cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>        
             </div>
+
         </div>
     </div>
+</div>
 
 
 
@@ -181,3 +170,4 @@
 
 
 </html>
+
